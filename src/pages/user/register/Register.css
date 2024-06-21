@@ -1,0 +1,291 @@
+
+.container {
+    position: relative;
+    width: 2000px;
+    margin: 0 auto;
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 1073px;
+}
+
+.Register {
+    position: absolute;
+    width: 641px;
+    height: 878px;
+    left: 413px;
+    top: 100px;
+    background: #FFFFFF;
+}
+
+.Register-text {
+    position: absolute;
+    width: 115px;
+    height: 29px;
+    left: 46px;
+    top: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+}
+
+.Register-LastName input {
+    position: absolute;
+    width: 317px;
+    height: 58px;
+    left: 46px;
+    top: 94px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.Register-LastName span {
+    position: absolute;
+    width: 24px;
+    height: 27px;
+    left: 338px;
+    top: 110px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F20F0F;
+}
+
+.Register-Firstname input {
+    position: absolute;
+    width: 176px;
+    height: 58px;
+    left: 397px;
+    top: 94px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.Register-Firstname span {
+    position: absolute;
+    width: 24px;
+    height: 27px;
+    left: 537px;
+    top: 110px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F20F0F;
+}
+
+.Register-Email input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 528px;
+    height: 54px;
+    left: 46px;
+    top: 195px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.Register-Email span {
+    position: absolute;
+    width: 24px;
+    height: 27px;
+    left: 538px;
+    top: 210px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F20F0F;
+}
+
+.Register-Phone input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 528px;
+    height: 54px;
+    left: 46px;
+    top: 292px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.Register-Phone span {
+    position: absolute;
+    width: 24px;
+    height: 27px;
+    left: 538px;
+    top: 303px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F20F0F;
+}
+
+.Register-Birth input {
+    position: absolute;
+    width: 208px;
+    height: 58px;
+    left: 46px;
+    top: 381px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.Register-Birth span {
+    position: absolute;
+    width: 15.75px;
+    height: 27px;
+    left: 228px;
+    top: 397px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F20F0F;
+}
+
+.Register-sex {
+    position: absolute;
+    width: 292px;
+    height: 29px;
+    left: 305px;
+    top: 396px;
+    display: flex;
+}
+
+.form-check {
+    margin-right: 15px;
+}
+
+.Register-UserName input {
+    position: absolute;
+    width: 528px;
+    height: 54px;
+    left: 46px;
+    top: 465px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.Register-UserName span {
+    position: absolute;
+    width: 24px;
+    height: 27px;
+    left: 544px;
+    top: 484px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F20F0F;
+}
+
+.Register-Password input {
+    position: absolute;
+    width: 528px;
+    height: 54px;
+    left: 46px;
+    top: 554px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.Register-Password span {
+    position: absolute;
+    width: 24px;
+    height: 27px;
+    left: 538px;
+    top: 567px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F20F0F;
+}
+
+.Register input[type="text"],
+.Register input[type="email"],
+.Register input[type="password"],
+.Register input[type="datetime"] {
+    padding-left: 15px; 
+}
+
+.Register button {
+    position: absolute;
+    width: 528px;
+    height: 54px;
+    left: 46px;
+    top: 638px;
+    background: #7FD1EB;
+}
+
+.Register-login h1 {
+    position: absolute;
+    width: 292px;
+    height: 29px;
+    left: 137px;
+    top: 786px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.Register-login h2 {
+    position: absolute;
+    width: 63px;
+    height: 29px;
+    left: 420px;
+    top: 786px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F80E0E;
+}
