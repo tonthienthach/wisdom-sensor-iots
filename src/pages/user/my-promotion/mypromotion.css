@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+#menuContainer {
+  width: 250px;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+.container {
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main-container {
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.search-bar {
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.promotion-card {
+  margin: 20px 0;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.card-header span {
+  font-weight: bold;
+}
+
+.card-header img {
+  width: 24px;
+  height: 24px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-body p {
+  margin: 0 0 10px 0;
+}
+
+.use-btn {
+  padding: 10px 20px;
+  background: rgba(5, 204, 248, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.use-btn:hover {
+  background-color: #0056b3;
+}
