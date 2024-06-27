@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.edit-employee-page {
+  background: linear-gradient(180deg, rgba(235, 217, 173, 0.0768) 0%, rgba(252, 182, 3, 0.32) 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0;
+}
+
+.edit-employee-container {
+  flex: 1;
+  max-width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 92px;
+  height: 92px;
+  border: 1px solid rgba(248, 151, 5, 0.57);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+}
+
+.username {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.edit-profile-button {
+  width: 147px;
+  height: 40px;
+  font-size: 16px;
+  background: rgba(248, 151, 5, 0.57);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-profile-button i {
+  margin-right: 10px;
+}
+
+.edit-profile-button:hover {
+  background: rgba(248, 151, 5, 0.8);
+}
+
+.account-info {
+  width: 100%;
+  text-align: left;
+}
+
+.section-account,
+.section-notification {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.icon-account,
+.icon-notifications {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.text-account,
+.text-notifications {
+  font-size: 20px;
+}
+
+.text-profile,
+.change-password {
+  margin: 16px 0 16px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.text-profile:hover,
+.change-password:hover {
+  color: rgba(248, 151, 5, 0.8);
+}
+
+.profile-container {
+  flex: 2;
+  max-width: 600px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.profile-heading {
+  text-align: left;
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(248, 151, 5, 0.57);
+  margin: 20px 0;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detail-label {
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.detail-value {
+  flex: 2;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+.gender-value {
+  display: flex;
+  gap: 10px;
+}
+
+.birthday-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.birthday-input {
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.save-button,
+.delete-button {
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button {
+  background-color: rgba(15, 242, 133, 1);
+}
+
+.delete-button {
+  background-color: rgba(242, 15, 15, 1);
+}
+
+.save-button:hover {
+  background-color: rgba(15, 242, 133, 0.8);
+}
+
+.delete-button:hover {
+  background-color: rgba(242, 15, 15, 0.8);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .edit-employee-container,
+  .profile-container {
+      max-width: 100%;
+      margin: 10px;
+  }
+}

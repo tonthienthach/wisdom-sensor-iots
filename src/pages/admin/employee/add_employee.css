@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(235, 217, 173, 0.08) 8%, rgba(252, 182, 3, 0.32) 32%);
+}
+
+main .body-container {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+main .sample-image {
+    width: 100%;
+    max-width: 278px;
+    height: auto;
+    margin: 20px auto;
+}
+
+main .form-container {
+    font-size: 1rem;
+    margin: 20px;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .form-container h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+
+main .form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+main .form-field {
+    position: relative;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+main .form-field i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+main .form-field input,
+main .form-field select {
+    width: 100%;
+    padding: 0.75rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+main .form-field input[type="date"] {
+    padding-right: 10px;
+}
+
+main .password-field {
+    display: flex;
+    align-items: center;
+}
+
+main .password-field i.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+main .form-field input:focus,
+main .form-field select:focus {
+    border-color: #fcb603;
+}
+
+.form-field input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+main button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background: #fcb603;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+main button:hover {
+    background-color: #e0a800;
+}
+
+.add-link {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    background: #fcb603;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-link:hover {
+    background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+    .body-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .sample-image {
+        margin-top: 50px;
+    }
+
+    main .form-container {
+        margin: 20px;
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    main .sample-image {
+        width: 200px;
+        height: 190px;
+    }
+
+    main .form-container {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .add-link {
+        margin-top: 10px;
+    }
+}

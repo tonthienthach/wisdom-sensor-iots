@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, rgba(235, 217, 173, 0.08) 0%, rgba(252, 182, 3, 0.32) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.employee-detail-container {
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    margin: 40px auto;
+    border: 2px solid rgba(252, 182, 3, 1);
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.header i {
+    margin-right: 10px;
+}
+
+.employee-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.employee-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.employee-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.employee-id {
+    font-size: 18px;
+    color: #666;
+}
+
+.sample-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sample-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(252, 182, 3, 1);
+    margin: 20px 0;
+}
+
+.employee-extra-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.info-label {
+    width: 120px;
+    font-weight: bold;
+    color: #555;
+}
+
+.info-value {
+    color: #777;
+}
+
+.horizontal-divider {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(252, 182, 3, 1);
+    margin: 20px 0;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.order-button {
+    background: rgba(242, 179, 15, 0.8);
+}
+
+.contract-button {
+    background: rgba(15, 133, 242, 0.8);
+}
+
+.edit-button {
+    background: rgba(248, 14, 14, 0.8);
+}
+
+.order-button:hover {
+    background: rgba(242, 179, 15, 1);
+}
+
+.contract-button:hover {
+    background: rgba(15, 133, 242, 1);
+}
+
+.edit-button:hover {
+    background: rgba(248, 14, 14, 1);
+}
+
+@media (max-width: 768px) {
+    .employee-detail-container {
+        padding: 15px;
+    }
+
+    .employee-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar {
+        margin-bottom: 20px;
+    }
+
+    .employee-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .action-buttons button {
+        width: 100%;
+    }
+}
