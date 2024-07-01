@@ -23,7 +23,7 @@ function ChangePasswordPage() {
                 <div className="input-group mb-3">
                     <div className="input-icon">
                         <i className="fa fa-lock" />
-                    </div>
+                    </div>  
                     <input
                         className="form-control"
                         id="confirm-password"

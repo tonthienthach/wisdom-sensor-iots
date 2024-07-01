@@ -1,0 +1,19 @@
+footer {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #31ADD4 100%);
+}
+
+.footer-header {
+    border-radius: 30px 90px;
+    background-color: #05CCF8;
+    opacity: 0.45;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content i {
+    border: 1px solid #000;
+    /* Màu và kích thước đường viền */
+    padding: 5px;
+}
+.footer-content input,.footer-content textarea{
+    width: 100%;
+}
