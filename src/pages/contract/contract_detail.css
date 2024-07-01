@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(235, 217, 173, 0.0768) 0%, rgba(252, 182, 3, 0.32) 100%);
+
+}
+
+.container {
+    background: transparent;
+    max-width: 1000px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-button {
+    font-size: 32px;
+    font-weight: bold;
+    width: 249px;
+    height: 100px;
+    /* background: linear-gradient(90deg, rgba(89, 23, 230, 0.11) 0%, rgba(176, 111, 228, 0.73) 99%); */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 600px;
+    align-items: center;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: red;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+
+.contract-details {
+    width:100%;
+    height: 1300px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  margin-top: 300px;
+    position: absolute;
+ 
+}
+
+.detail-row {
+    color: black;
+    font-size: 36px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.detail-label {
+    margin-left: 30px;
+    width: 400px;
+   
+}
+
+.detail-value {
+    flex-grow: 10;
+
+}
+
+.terms {
+
+    color: black   ;
+    font-size: 28px;
+    margin-left: 16px;
+}
+
+.parties {
+    font-size: 32px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.party-a, .party-b {
+    width: 50%;
+    text-align: center;
+}
+.contract-details {
+    background: linear-gradient(180deg, rgba(235, 217, 173, 0.0768) 0%, rgba(252, 182, 3, 0.32) 100%);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+    background-size: cover; /* Tùy chỉnh kích thước hình ảnh */
+    border-radius: 10px; /* Bo góc cho hình ảnh */
+    padding: 20px; /* Thêm padding để phần nội dung không nằm gần mép của hình ảnh */
+    background-color: rgba(255, 255, 255, 0.5); /* Màu trắng với độ trong suốt là 50% */
+}
+
+.background {
+    position: relative;
+    width: 1000px;
+    height: 1400px;
+
+}
+/* Nội dung tiếp tục giữ nguyên như trước */
