@@ -1,0 +1,134 @@
+/* add_service.module.css */
+.body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 217, 173, 0.0768) 0%,
+    rgba(252, 182, 3, 0.32) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-placeholder,
+#footer-placeholder {
+  width: 100%;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 64px 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.form__header,
+.form__footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form__image-input {
+  margin-bottom: 20px;
+}
+
+.form__file-input {
+  display: none;
+}
+
+.form__file-label {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form__body {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form__field {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form__field--inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__label {
+  display: block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.form__input,
+.form__select {
+  width: 95%;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form__button {
+  background-color: #0ff285;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+.form__input:not(:last-child),
+.form__select {
+  flex: 1;
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .form {
+    width: fit-content;
+    max-width: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .form__field--inline {
+    display: block;
+  }
+  .form__field--inline .form__input {
+    margin-bottom: 16px;
+  }
+  .form__field--inline .form__select {
+    width: 102%;
+  }
+}
