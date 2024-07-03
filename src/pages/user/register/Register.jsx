@@ -1,82 +1,107 @@
-import './Register.css';
-import  image from './background.jpg';
+// Import the CSS module
+import styles from './register.module.css'
+import image from './background.jpg' // Ensure this path is correct
+import React from 'react'
+import { Link } from '@mui/material'
+import { red } from '@mui/material/colors'
+
 function RegisterPage() {
     return (
-        <>
+        <div>
+            <div className={styles.container}>
                 <div>
                     <img
-                        className="background"
-                        loading="lazy"
-                        src= {image}
-                        alt="BootstrapBrain Logo"
+                        alt='BootstrapBrain Logo'
+                        className={styles.background}
+                        loading='lazy'
+                        src={image} // Use the imported image variable
                     />
                 </div>
-                <div className="Register">
-                    <h className="Register-text">Register</h>
-                    <div className="Register-LastName">
-                        <input type="text" placeholder="LastName" required="" />
-                        <span>*</span>
-                    </div>
-                    <div className="Register-Firstname">
-                        <input type="text" placeholder="FirstName" required="" />
-                        <span>*</span>
-                    </div>
-                    <div className="Register-Email">
-                        <input type="email" placeholder="Email" required="" />
-                        <span>*</span>
-                    </div>
-                    <div className="Register-Phone">
-                        <input type="text" placeholder="Phone" required="" />
-                        <span>*</span>
-                    </div>
-                    <div className="Register-Birth">
-                        <input type="datetime" placeholder="Birth" required="" />
-                        <span>*</span>
-                    </div>
-                    <div className="Register-sex">
-                        <div className="form-check">
+                <div className={styles.Register}>
+                    <h className={styles['Register-text']}>Register</h>
+                    <div className={styles.firstContainer}>
+                        <div className={styles['Register-LastName']}>
                             <input
-                                type="radio"
-                                className="form-check-input"
-                                id="radio1"
-                                name="optradio"
-                                defaultValue="Male"
-                                defaultChecked=""
+                                placeholder='LastName'
+                                required
+                                type='text'
                             />
-                            <label className="form-check-label" htmlFor="radio1">
+                            <span style={{ color: red }}>*</span>
+                        </div>
+                        <div className={styles['Register-Firstname']}>
+                            <input
+                                placeholder='FirstName'
+                                required
+                                type='text'
+                            />
+                            <span>*</span>
+                        </div>
+                    </div>
+                    <div className={styles['Register-Email']}>
+                        <input placeholder='Email' required type='email' />
+                        <span>*</span>
+                    </div>
+                    <div className={styles['Register-Phone']}>
+                        <input placeholder='Phone' required type='text' />
+                        <span>*</span>
+                    </div>
+                    <div className={styles['Register-Birth']}>
+                        <input placeholder='Birth' required type='datetime' />
+                        <span>*</span>
+                    </div>
+                    <div className={styles['Register-sex']}>
+                        <div className={styles['form-check']}>
+                            <input
+                                className={styles['form-check-input']}
+                                defaultChecked=''
+                                defaultValue='Male'
+                                id='radio1'
+                                name='optradio'
+                                type='radio'
+                            />
+                            <label
+                                className={styles['form-check-label']}
+                                htmlFor='radio1'
+                            >
                                 Male
                             </label>
                         </div>
-                        <div className="form-check">
+                        <div className={styles['form-check']}>
                             <input
-                                type="radio"
-                                className="form-check-input"
-                                id="radio2"
-                                name="optradio"
-                                defaultValue="Female"
+                                className={styles['form-check-input']}
+                                defaultValue='Female'
+                                id='radio2'
+                                name='optradio'
+                                type='radio'
                             />
-                            <label className="form-check-label" htmlFor="radio2">
+                            <label
+                                className={styles['form-check-label']}
+                                htmlFor='radio2'
+                            >
                                 Female
                             </label>
                         </div>
                     </div>
-                    <div className="Register-UserName">
-                        <input type="text" placeholder="UserName" required="" />
+                    <div className={styles['Register-UserName']}>
+                        <input placeholder='UserName' required type='text' />
                         <span>*</span>
                     </div>
-                    <div className="Register-Password">
-                        <input type="password" placeholder="Password" required="" />
+                    <div className={styles['Register-Password']}>
+                        <input
+                            placeholder='Password'
+                            required
+                            type='password'
+                        />
                         <span>*</span>
                     </div>
                     <button>Register</button>
-                    <div className="Register-login">
+                    <div className={styles['Register-login']}>
                         <h1>Already have an account?</h1>
-                        <h2>Login</h2>
+                        <Link to='/user/login'>Login</Link>
                     </div>
                 </div>
-    
-        </>
+            </div>
+        </div>
     )
-
 }
-export default RegisterPage;
+export default RegisterPage
