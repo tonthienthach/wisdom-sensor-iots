@@ -27,6 +27,10 @@ const AddService = () => {
           <div className={styles.form__imageInput}>
             <label htmlFor="serviceImage" className={styles.form__fileLabel}>Select Image</label>
             <input type="file" id="serviceImage" className={styles.form__fileInput} accept="image/jpeg, image/png" />
+            <div className={styles.form__fileInstructions}>
+              <p>File size: maximum 1 MB</p>
+              <p>File extension: JPEG, PNG</p>
+            </div>
           </div>
         </div>
         <div className={styles.form__body}>
@@ -39,16 +43,13 @@ const AddService = () => {
             <input type="text" id="serviceDescription" className={styles.form__input} placeholder="Describe" />
           </div>
           <div className={styles.form__field}>
-            <label htmlFor="servicePrice" className={styles.form__label}>Price</label>
-            <input type="text" id="servicePrice" className={styles.form__input} placeholder="Price" />
-          </div>
-          <div className={styles.form__field}>
             <label htmlFor="serviceId" className={styles.form__label}>ID</label>
             <input type="text" id="serviceId" className={styles.form__input} placeholder="S4657" />
           </div>
-          <div className={`${styles.form__field} ${styles.form__fieldInline}`}>
-            <label htmlFor="servicePeriod" className={styles.form__label}>Price</label>
-            <input type="text" id="servicePeriod" className={styles.form__input} placeholder="Price" />
+          <div className={styles.form__fieldInline}>
+            <label htmlFor="servicePrice" className={styles.form__label}>Price</label>
+            <input type="text" id="servicePrice" className={styles.form__input} placeholder="Price" />
+            <label htmlFor="servicePeriod" className={styles.form__label}>Per</label>
             <select id="servicePeriod" className={styles.form__select}>
               <option value="month">Month</option>
               <option value="year">Year</option>

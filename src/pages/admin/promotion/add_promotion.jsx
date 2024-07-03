@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import styles from './add_promotion.module.css'; // Import as a module
 
@@ -16,6 +17,8 @@ const AddPromotion = () => {
     limit: 'limit',
     amount: 1,
   });
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchHeaderFooter = async () => {
@@ -53,7 +56,7 @@ const AddPromotion = () => {
       });
       console.log(response.data);
       alert('Promotion created successfully');
-      history.push('./list_promotion.jsx');
+      navigate('/list_promotion');
     } catch (error) {
       console.error('There was an error creating the promotion!', error);
     }
