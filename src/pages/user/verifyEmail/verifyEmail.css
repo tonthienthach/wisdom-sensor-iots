@@ -1,0 +1,72 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-placeholder,
+#footer-placeholder {
+    width: 100%;
+}
+
+.background {
+    flex: 1;
+    background-image: url('./verifyEmail.css');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.verify {
+    text-align: center;
+}
+
+.verify h1 {
+    font-size: 36px;
+    /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.verify h2,
+.verify h3 {
+    font-size: 24px;
+    /* Increased font size */
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.otp-field {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Increased gap between inputs */
+    margin-bottom: 30px;
+    /* Increased margin */
+}
+
+.otp-field input {
+    height: 70px;
+    /* Increased height */
+    width: 70px;
+    /* Increased width */
+    border-radius: 10px;
+    /* Increased border radius */
+    outline: none;
+    font-size: 1.5rem;
+    /* Increased font size */
+    text-align: center;
+    border: 1px solid #ddd;
+}
