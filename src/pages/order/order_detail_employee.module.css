@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(235, 217, 173, 0.0768) 0%, rgba(252, 182, 3, 0.32) 100%);
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(235, 217, 173, 0.0768) 0%, rgba(252, 182, 3, 0.32) 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.elip {
+    width: 92px;
+    height: 92px;
+    border: 1px solid rgba(252, 182, 3, 1);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.userName {
+    font-size: 32px;
+    margin-right: auto;
+}
+
+.orderDetail {
+    font-size: 64px;
+    font-weight: bold;
+    margin-right: 400px;
+    background: linear-gradient(90deg, rgba(170, 15, 242, 0.42) 0%, #AA0FF2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    margin-top: 10px;
+}
+
+.smallImage {
+    width: 48px;
+    height: 39px;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+
+.backButton {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.acceptButton,
+.processingButton {
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 160px;
+  
+}
+
+.acceptButton {
+    background-color: rgb(74, 158, 74);
+    color: white;
+    margin-left: 900px;
+}
+
+.processingButton {
+    background-color: red;
+    color: white;
+}
+
+.mediumImage {
+    width: 52px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.orderInfo {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.orderId,
+.orderDate,
+.expectedDate {
+    font-size: 24px;
+    display: flex;
+}
+
+.deliveryImage {
+    width: 65px;
+    height: 73px;
+    margin-right: 20px;
+}
+
+.productsContainer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+}
+
+.productsContainer p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.packageButton {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(15, 242, 133, 0.3);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.iconImage {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.productTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.productTable th,
+.productTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.productTable th {
+    background-color: #f2f2f2;
+}
+
+.paymentInfo {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.paymentTitle {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.paidStatus {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}

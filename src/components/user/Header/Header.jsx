@@ -1,8 +1,17 @@
+import './Header.css'
+import image from './logo.jpg';
 function Header() {
     return <>
         <header>
             <div className="header-container">
-                <img src="../../../images/logo.png" alt="Logo" className="logo1" />
+            <div>
+                    <img
+                        className="logo1"
+                        loading="lazy"
+                        src= {image}
+                        alt="BootstrapBrain Logo"
+                    />
+                </div>
                 <nav className="nav-menu">
                     <a href="../../../html/user/my_account/profile.html" className="nav-link">
                         Home
@@ -37,3 +46,5 @@ function Header() {
     </>
 }
 export default Header; 
+
+
