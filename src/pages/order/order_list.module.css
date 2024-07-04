@@ -1,0 +1,128 @@
+/* OrderList.module.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    margin: 0 ;
+    padding: 20px;
+    background-color: #fff2cc; /* Light yellow background */
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #ffefd5; /* Pale peach background for search bar */
+    border: 1px solid #fa8072; /* Salmon border */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.searchIcon {
+    width: 40px; /* Smaller icon based on the screenshot */
+    height: 40px;
+    margin-right: 10px;
+    
+}
+
+.searchText {
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+    
+}
+
+.headerRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.headerImage {
+    width: 60px; /* Adjusted to match the screenshot */
+    height: 60px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.headerTitle {
+    font-size: 32px; /* Larger font size for visibility */
+    font-weight: bold;
+    color:red; /* Deep blue color */
+    margin-top:40px;
+}
+
+.orderList {
+    background-color: #f0e68c; /* Khaki background for table section */
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.orderListTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.orderListTh, .orderListTd {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.progressButton, .paidButton, .detailButton {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+}
+
+.progressButton {
+    background-color: #f08080; /* Light coral for progressing */
+    color: white;
+}
+
+.paidButton {
+    background-color: #90ee90; /* Light green for paid */
+    color: white;
+}
+
+.detailButton {
+    background-color: #add8e6; /* Light blue for detail */
+    color: black;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paginationLink {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.paginationLink:hover {
+    background-color: #f0f0f0;
+}
