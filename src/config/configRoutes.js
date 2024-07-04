@@ -1,5 +1,3 @@
-import OrderDetailEmployee from '../pages/order/order_detail_employee'
-
 const configRoutes = {
     home: '/',
     loginUser: '/user/login',

@@ -1,11 +1,13 @@
-
 .service-list {
     margin-left: 350px;
     text-align: center;
     max-width: 800px;
+    background-color: antiquewhite;
 }
 
-.service-list__header, .service-list__search, .service-list__items {
+.service-list__header,
+.service-list__search,
+.service-list__items {
     padding: 20px;
 }
 
@@ -95,7 +97,11 @@
 }
 
 .service-list__more {
-    background-image: linear-gradient(90deg, rgba(170, 15, 242, 0.42) 0%, rgba(98, 9, 140, 0.42) 100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(170, 15, 242, 0.42) 0%,
+        rgba(98, 9, 140, 0.42) 100%
+    );
     text-decoration: none;
 }
 
@@ -118,13 +124,13 @@
     text-decoration: underline;
 }
 
-.review__picture{
+.review__picture {
     width: 200px;
     height: 200px;
 }
 
 .product__image {
-    max-width: 200px; 
+    max-width: 200px;
     height: 200px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }

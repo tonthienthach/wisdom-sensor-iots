@@ -146,6 +146,12 @@ header {
     color: red !important;
     text-decoration: none !important;
 }
+.registercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 footer {
     flex-shrink: 0;
     background-color: #f1f1f1;

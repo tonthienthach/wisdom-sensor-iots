@@ -21,19 +21,11 @@ function RegisterPage() {
                     <h className={styles['Register-text']}>Register</h>
                     <div className={styles.firstContainer}>
                         <div className={styles['Register-LastName']}>
-                            <input
-                                placeholder='LastName'
-                                required
-                                type='text'
-                            />
+                            <input placeholder='LastName' required type='text' />
                             <span style={{ color: red }}>*</span>
                         </div>
                         <div className={styles['Register-Firstname']}>
-                            <input
-                                placeholder='FirstName'
-                                required
-                                type='text'
-                            />
+                            <input placeholder='FirstName' required type='text' />
                             <span>*</span>
                         </div>
                     </div>
@@ -59,10 +51,7 @@ function RegisterPage() {
                                 name='optradio'
                                 type='radio'
                             />
-                            <label
-                                className={styles['form-check-label']}
-                                htmlFor='radio1'
-                            >
+                            <label className={styles['form-check-label']} htmlFor='radio1'>
                                 Male
                             </label>
                         </div>
@@ -74,10 +63,7 @@ function RegisterPage() {
                                 name='optradio'
                                 type='radio'
                             />
-                            <label
-                                className={styles['form-check-label']}
-                                htmlFor='radio2'
-                            >
+                            <label className={styles['form-check-label']} htmlFor='radio2'>
                                 Female
                             </label>
                         </div>
@@ -87,11 +73,7 @@ function RegisterPage() {
                         <span>*</span>
                     </div>
                     <div className={styles['Register-Password']}>
-                        <input
-                            placeholder='Password'
-                            required
-                            type='password'
-                        />
+                        <input placeholder='Password' required type='password' />
                         <span>*</span>
                     </div>
                     <button>Register</button>

@@ -43,10 +43,7 @@ function Login() {
                 <form onSubmit={handleSubmit}>
                     <div className={styles.inputgroup}>
                         <div className={styles.inputgrouptext}>
-                            <FontAwesomeIcon
-                                icon={faUser}
-                                className={styles.inputicon}
-                            />
+                            <FontAwesomeIcon icon={faUser} className={styles.inputicon} />
                         </div>
                         <input
                             className={`${styles.loginusername} form-control`}
@@ -60,10 +57,7 @@ function Login() {
                     </div>
                     <div className={styles.inputgroup}>
                         <div className={styles.inputgrouptext}>
-                            <FontAwesomeIcon
-                                icon={faLock}
-                                className={styles.inputicon}
-                            />
+                            <FontAwesomeIcon icon={faLock} className={styles.inputicon} />
                         </div>
                         <input
                             className={`${styles.loginpassword} form-control`}
@@ -76,11 +70,7 @@ function Login() {
                         />
                     </div>
                     <div className={styles.buttonlogind}>
-                        <button
-                            className={styles.btnlogin}
-                            type='submit'
-                            disabled={loading}
-                        >
+                        <button className={styles.btnlogin} type='submit' disabled={loading}>
                             {loading ? 'Logging in...' : 'Login'}
                         </button>
                     </div>
@@ -90,10 +80,7 @@ function Login() {
                         {error}
                     </div>
                 )}
-                <Link
-                    to='/user/forgot-password'
-                    className={styles.forgotpassword}
-                >
+                <Link to='/user/forgot-password' className={styles.forgotpassword}>
                     Forgot password?
                 </Link>
                 <div className={styles.linecontainer}>
@@ -118,9 +105,7 @@ function Login() {
                     </Button>
                 </div>
                 <div className={styles.registercontainer}>
-                    <span className={styles.registercontent}>
-                        Do not have an account?{' '}
-                    </span>
+                    <span className={styles.registercontent}>Do not have an account? </span>
                     <Link className={styles.registerlink} to='/user/register'>
                         Register
                     </Link>

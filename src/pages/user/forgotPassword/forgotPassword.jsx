@@ -22,16 +22,11 @@ function ForgotPassword() {
                 </div>
                 <div className={styles.iconForgotpassword}>
                     <FontAwesomeIcon icon={faRotateRight} />
-                    <span className={styles.iconForgotpasswordText}>
-                        Forgot password
-                    </span>
+                    <span className={styles.iconForgotpasswordText}>Forgot password</span>
                 </div>
                 <div className={styles.username}>
                     <div className={styles.inputIconContainer}>
-                        <FontAwesomeIcon
-                            icon={faRotateRight}
-                            className={styles.inputIcon}
-                        />
+                        <FontAwesomeIcon icon={faRotateRight} className={styles.inputIcon} />
                         <input
                             className={styles.inputUsername}
                             id='userNameInput'
