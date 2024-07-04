@@ -1,0 +1,131 @@
+/* list_service.module.css */
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background: linear-gradient(180deg, rgba(235, 217, 173, 0.0768) 0%, rgba(252, 182, 3, 0.32) 100%);
+}
+
+#header-placeholder,
+.serviceList,
+#footer-placeholder {
+  width: 100%;
+}
+
+.serviceList {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.serviceList__header, .serviceList__search, .serviceList__items {
+  padding: 20px;
+}
+
+.serviceList__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.serviceList__header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58.09px;
+  text-align: center;
+}
+
+.serviceList__addBtn {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgba(15, 242, 133, 0.3) 0%, rgba(15, 242, 133, 0.78) 99%);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.serviceList__search {
+  margin-bottom: 20px;
+}
+
+.serviceList__searchInput {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.serviceList__item {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  background: linear-gradient(180deg, rgba(235, 217, 173, 0.0768) 0%, rgba(252, 182, 3, 0.32) 100%);
+}
+
+.serviceList__item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.serviceList__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.serviceList__details {
+  flex: 1;
+}
+
+.serviceList__title {
+  font-family: Book Antiqua;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.76px;
+  text-align: center;
+}
+
+.serviceList__description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.serviceList__price {
+  font-weight: bold;
+  color: #333;
+}
+
+.serviceList__more {
+  background-image: linear-gradient(90deg, rgba(170, 15, 242, 0.42) 0%, rgba(98, 9, 140, 0.42) 100%);
+  text-decoration: none;
+}
+
+.serviceList__more:hover {
+  text-decoration: underline;
+}
+
+.serviceList__pagination {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.serviceList__pageLink {
+  margin: 0 5px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.serviceList__pageLink:hover {
+  text-decoration: underline;
+}

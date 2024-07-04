@@ -1,4 +1,4 @@
-import './ChangePasswordPage.css'
+import './ChangePasswordPage.module.css'
 function ChangePasswordPage() {
     return (
         <div className='container'>

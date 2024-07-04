@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    background: transparent;
+    max-width: 700px;
+    height: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-button {
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    font-size: 28px;
+    font-weight: bold;
+    width: 400px;
+    height: 70px;
+    background: rgb(6, 207, 233);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    display: center;
+    color: black;    ;
+    font-size: 35px;
+    margin: 80px 350px;
+    text-align: center;
+}
+
+.contract-details {
+    
+    height: 1500px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.detail-row {
+    color: black;
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.detail-label {
+    margin-left: 150px;
+    width: 600px;
+}
+
+.detail-value {
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
+.terms {
+
+    color: black   ;
+    font-size: 32px;
+    margin-left: 40px;
+}
+
+.parties {
+    font-size: 32px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.party-a, .party-b {
+    width: 50%;
+    text-align: center;
+}
+
+.cash__image{
+    height: 25px;
+    width: 50px;
+}   
+
+/* Nội dung tiếp tục giữ nguyên như trước */
