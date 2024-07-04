@@ -1,0 +1,21 @@
+.adminFooterContainer {
+  width: 100%;
+  background-color: #f8f9fa;
+  background: url('../../../assets/backgroung_admin.png') no-repeat center center;
+  background-size: cover;
+  color: #000;
+  text-align: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  position: relative; /* Không cố định footer */
+}
+
+.adminFooterContainer a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.adminFooterContainer a:hover {
+  text-decoration: underline;
+}
