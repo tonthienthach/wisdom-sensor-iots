@@ -1,0 +1,138 @@
+.body {
+  font-family: "Arial", sans-serif;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-placeholder,
+#footer-placeholder {
+  width: 100%;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, rgba(248, 151, 5, 0.0684) 0%, rgba(248, 151, 5, 0.4503) 100%);
+  text-align: left;
+}
+
+.form__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #a50ff2;
+  background: linear-gradient(90deg, rgba(170, 15, 242, 0.273) 0%, rgba(170, 15, 242, 0.65) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.form__imageInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__fileInput {
+  display: none;
+}
+
+.form__fileLabel {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.form__fileInstructions {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form__body {
+  width: 100%;
+}
+
+.form__field {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.form__label {
+  color: #666;
+  font-weight: bold;
+  margin-right: 20px;
+  min-width: 100px; /* Adjust this width as needed */
+  text-align: left;
+}
+
+.form__input,
+.form__select {
+  width: calc(100% - 150px); /* Adjust this width to match the label's width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form__fieldInline {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.form__button {
+  background: rgba(15, 242, 133, 1);
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 380px;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .form {
+    padding: 20px;
+  }
+
+  .form__fieldInline {
+    display: block;
+  }
+
+  .form__fieldInline .form__input,
+  .form__fieldInline .form__select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
