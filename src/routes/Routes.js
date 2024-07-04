@@ -6,6 +6,13 @@ import LayoutMainAdmin from "../layout/layout_main_admin/layout_main_admin"; // 
 import RegisterPage from "../pages/user/register/Register";
 import LoginPage from './../pages/login/Login';
 import ChangePasswordPage from "../pages/user/changePassword/ChangePasswordPage";
+import ServiceListPage from "../pages/user/service/Servicelist";
+import ServiceDetailPage from "../pages/user/service/Servicedetail";
+import RegisterServicePage from "../pages/user/service/Registerservice";
+import InvoiceServicePage from "../pages/user/service/Invoiceservice";
+import MyPurchaseProcessingPage from "../pages/user/mypurchase/Mypurchaseprocessing";
+import MyPurchaseCompletePage from "../pages/user/mypurchase/Mypurchasecomplete";
+import MyPurchaseReviewPage from "../pages/user/mypurchase/Mypurchasereview";
 
 import CustomerDetail from "../pages/customer/customer_detail";
 import CustomerOrder from "../pages/customer/customer_order";
@@ -32,6 +39,14 @@ const mainRoutes = [
   {path: configRoutes.loginUser, component: LoginPage, layout: LayoutMain},
   {path: configRoutes.registerUser, component: RegisterPage, layout: LayoutMain}, 
   {path: configRoutes.changePassword, component: ChangePasswordPage, layout: LayoutMain},
+//dat
+  {path: configRoutes.serviceList, component: ServiceListPage, layout: LayoutMain},
+  {path: configRoutes.serviceDetail, component: ServiceDetailPage, layout: LayoutMain},
+  {path: configRoutes.registerService, component: RegisterServicePage, layout: LayoutMain},
+  {path: configRoutes.invoiceService, component: InvoiceServicePage, layout: LayoutMain},
+  {path: configRoutes.mypurchaseProcessing, component: MyPurchaseProcessingPage, layout: LayoutMain},
+  {path: configRoutes.mypurchaseComplete, component: MyPurchaseCompletePage, layout: LayoutMain},
+  {path: configRoutes.mypurchaseReview, component: MyPurchaseReviewPage, layout: LayoutMain}
 //minh nghia
   {path: configRoutes.customerDetail, component: CustomerDetail, layout: LayoutMain},
   {path: configRoutes.customerOrder, component: CustomerOrder, layout: LayoutMain},
@@ -50,9 +65,6 @@ const mainRoutes = [
   { path: configRoutes.serviceListAdmin, component: ServiceListAdmin, layout: LayoutMainAdmin },
   { path: configRoutes.serviceDetailAdmin, component: DetailServiceAdmin, layout: LayoutMainAdmin },
   { path: configRoutes.serviceUpdateAdmin, component: UpdateServiceAdmin, layout: LayoutMainAdmin }, // New route
-
-
-
 ];
 
 export default mainRoutes;

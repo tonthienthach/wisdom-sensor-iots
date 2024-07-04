@@ -7,6 +7,14 @@ const configRoutes = {
   forgotPassword: "/user/forgot-password", 
   verifyEmail: "/user/verify-email",
   changePassword: "/user/change-password",
+//dat
+  serviceList: "/user/service-list",
+  serviceDetail: "/user/service-detail",
+  registerService: "/user/register-service",
+  invoiceService: "/user/invoice-service",
+  mypurchaseProcessing: "/user/mypurchase-processing",
+  mypurchaseComplete: "/user/mypurchase-complete",
+
 // minh nghia
   customerDetail: "/customer/customer-detail" ,
   customerOrder : "/customer/customer-order",
@@ -25,7 +33,6 @@ const configRoutes = {
   serviceListAdmin: "/admin/service-list", 
   serviceDetailAdmin: "/admin/service-detail", 
   serviceUpdateAdmin: "/admin/service-update", 
-
 };
 
 export default configRoutes;
