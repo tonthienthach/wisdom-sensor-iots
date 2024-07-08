@@ -35,7 +35,7 @@ function Login() {
     }
 
     return (
-        <div className={styles.container}>
+        <div className={styles.loginContainer}>
             <div className={styles.inputlogin}>
                 <div className={styles.textlogin}>
                     <p>Login</p>

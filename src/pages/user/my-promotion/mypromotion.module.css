@@ -1,31 +1,31 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f7f7f7;
+/* MyPromotion.module.css */
+.mainContainer {
+  margin-bottom: 100px;
+  display: flex;
+  background-color: #f7f7f7; /* Thay thế cho background-color của body */
+  min-height: 100vh; /* Thay thế cho min-height của body */
+  font-family: Arial, sans-serif; /* Thay thế cho font-family của body */
 }
+
 #menuContainer {
   width: 250px;
   margin-right: 20px;
   margin-left: 100px;
 }
+
 .container {
   width: 60%;
   background-color: white;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.main-container {
-  margin-bottom: 100px;
-  display: flex;
-}
 
-.search-bar {
+.searchBar {
   padding: 10px 0;
   border-bottom: 1px solid #eaeaea;
 }
 
-.search-bar input {
+.searchBar input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -33,7 +33,7 @@ body {
   border-radius: 5px;
 }
 
-.promotion-card {
+.promotionCard {
   margin: 20px 0;
   border: 1px solid #eaeaea;
   border-radius: 5px;
@@ -41,7 +41,7 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.card-header {
+.cardHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,27 +50,27 @@ body {
   border-bottom: 1px solid #eaeaea;
 }
 
-.card-header span {
+.cardHeader span {
   font-weight: bold;
 }
 
-.card-header img {
+.cardHeader img {
   width: 24px;
   height: 24px;
 }
 
-.card-body {
+.cardBody {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
 
-.card-body p {
+.cardBody p {
   margin: 0 0 10px 0;
 }
 
-.use-btn {
+.useBtn {
   padding: 10px 20px;
   background: rgba(5, 204, 248, 1);
   color: white;
@@ -79,6 +79,6 @@ body {
   border-radius: 5px;
 }
 
-.use-btn:hover {
+.useBtn:hover {
   background-color: #0056b3;
 }

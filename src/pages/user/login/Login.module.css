@@ -1,48 +1,12 @@
-html {
-    font-size: 16px;
-}
-html,
-body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-image: url('./background.jpg');
-    background-size: cover;
-}
-
-header {
-    flex-shrink: 0;
-    text-align: center;
-    padding: 20px;
-    background: #f8f9fa;
-}
-
-.container {
-    flex: 1;
+/* Login.module.css */
+.loginContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Or any background you want for login */
 }
-.input-group {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.input-icon {
-    position: absolute;
-    left: 10px;
-    z-index: 10;
-}
-.loginusername .loginpassword {
-    padding-left: 30px;
-}
+
 .inputlogin {
     width: 100%;
     max-width: 641px;
@@ -63,6 +27,18 @@ header {
     text-align: start;
 }
 
+.inputgroup {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputgrouptext {
+    position: absolute;
+    left: 10px;
+    z-index: 10;
+}
+
 .loginusername,
 .loginpassword {
     box-sizing: border-box;
@@ -71,6 +47,7 @@ header {
     background: #ffffff;
     border: 1px solid #000000;
     margin-bottom: 15px;
+    padding-left: 30px;
 }
 
 .buttonlogind .btnlogin {
@@ -85,7 +62,7 @@ header {
     border: none;
 }
 
-.forgot-password {
+.forgotpassword {
     display: flex;
     text-align: start;
     justify-content: start;
@@ -98,7 +75,7 @@ header {
     text-decoration: none;
 }
 
-.line-container {
+.linecontainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +94,7 @@ header {
     gap: 20px;
 }
 
-.rowicon .btn-facebook,
+.btn-facebook,
 .btn-google {
     border: 1px solid #000 !important;
     width: 240px;
@@ -128,52 +105,27 @@ header {
     cursor: pointer;
 }
 
-.rowicon .btn-facebook img,
+.btn-facebook img,
 .btn-google img {
     width: 40px;
     height: 42px;
 }
 
-.register-container {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 600;
-}
-.register-container .register-content {
-    color: gray;
-}
-.register-container .register-link {
-    color: red !important;
-    text-decoration: none !important;
-}
 .registercontainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-footer {
-    flex-shrink: 0;
-    background-color: #f1f1f1;
-    padding: 20px;
     text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
 }
-@media (max-width: 1200px) {
-    html {
-        font-size: 18px;
-    }
-    .container {
-        max-width: 1140px;
-        margin: auto;
-    }
+
+.registercontent {
+    color: gray;
 }
-@media (max-width: 992px) {
-    html {
-        font-size: 16px;
-    }
-}
-@media (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
+
+.registerlink {
+    color: red !important;
+    text-decoration: none !important;
 }

@@ -1,77 +1,73 @@
-import React from 'react'
-import './notification.css'
-
+import React from 'react';
+import styles from './Notification.module.css'
 const Notification = () => {
   return (
-    <div>
-        <div className="main-container">
-            <div id="menuContainer" />
-            <div className="notification-container">
-                <div className="notification-header">Today</div>
-                <ul className="notification-list">
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                </ul>
-                <div className="notification-header">Yesterday</div>
-                <ul className="notification-list">
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                <li className="notification-item">
-                    <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
-                    <div className="notification-text">
-                    Service package provides fingerprint sensor device
-                    </div>
-                </li>
-                </ul>
+    <div className={styles.mainContainer}>
+      <div id={styles.menuContainer} />
+      <div className={styles.notificationContainer}>
+        <div className={styles.notificationHeader}>Today</div>
+        <ul className={styles.notificationList}>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
             </div>
+          </li>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
             </div>
-
+          </li>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
+            </div>
+          </li>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
+            </div>
+          </li>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
+            </div>
+          </li>
+        </ul>
+        <div className={styles.notificationHeader}>Yesterday</div>
+        <ul className={styles.notificationList}>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
+            </div>
+          </li>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
+            </div>
+          </li>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
+            </div>
+          </li>
+          <li className={styles.notificationItem}>
+            <img src="../../../images/touch 2.png" alt="Fingerprint Icon" />
+            <div className={styles.notificationText}>
+              Service package provides fingerprint sensor device
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Notification
+export default Notification;

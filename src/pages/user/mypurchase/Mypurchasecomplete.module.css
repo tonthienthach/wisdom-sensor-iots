@@ -1,10 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
+/* MyPurchaseCompletePage.module.css */
 
 .container {
     width: 1600px;
@@ -14,20 +8,21 @@ body {
     padding: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.main-content {
+  }
+  
+  .mainContent {
     margin-left: 250px;
-}
-.filter-bar {
+  }
+  
+  .filterBar {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     background: white;
     border-bottom: 1px solid #ddd;
-}
-
-
-.filter-button {
+  }
+  
+  .filterButton {
     background-color: transparent;
     border: none;
     padding: 10px 20px;
@@ -36,16 +31,14 @@ body {
     position: relative;
     font-size: 20px;
     font-weight: bold;
-}
-
-
-.filter-button:hover {
+  }
+  
+  .filterButton:hover {
     background-color: rgba(0, 0, 0, 0.1);
     outline: none;
-}
-
-
-.filter-button:after {
+  }
+  
+  .filterButton:after {
     content: '';
     display: block;
     width: 0;
@@ -56,16 +49,14 @@ body {
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-
-.filter-button:hover:after,
-.filter-button:focus:after {
+  }
+  
+  .filterButton:hover:after,
+  .filterButton:focus:after {
     width: 100%;
-}
-
-
-.search-bar {
+  }
+  
+  .searchBar {
     width: 95%;
     display: flex;
     align-items: center;
@@ -74,25 +65,21 @@ body {
     border-bottom: 1px solid #ddd;
     margin-top: 10px;
     margin-left: 20px;
-   
-}
-
-
-.search-icon-button {
+  }
+  
+  .searchIconButton {
     background-color: transparent;
     border: none;
     cursor: pointer;
     margin-right: 30px;
-}
-
-
-.search-icon-button img {
+  }
+  
+  .iconImage {
     width: 50px;
     height: 50px;
-}
-
-
-.search-input {
+  }
+  
+  .searchInput {
     margin-left: 400px;
     flex-grow: 1;
     padding: 10px;
@@ -100,161 +87,129 @@ body {
     border-radius: 0;
     font-size: 20px;
     outline: none;
-}
-
-
-
-
-.search-button {
-    padding: 10px;
-    background-color: #ddd;
-    border: 1px solid #ddd;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-
-.search-button:hover {
-    background-color: #ccc;
-}
-
-
-.order-list {
+  }
+  
+  .orderList {
     padding: 20px;
-}
-
-
-.order-item {
+  }
+  
+  .orderItem {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-
-.order-header {
+  }
+  
+  .orderHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-
-
-.delivery-icon {
+  }
+  
+  .deliveryIcon {
     width: 48px;
     height: 39px;
     opacity: 0.5;
-}
-.price-duration {
+  }
+  
+  .priceDuration {
     margin-left: 80%;
-}
-
-
-.status.processing {
+  }
+  
+  .statusProcessing {
     color: rgba(242, 15, 15, 1);
-}
-
-
-.order-details {
+  }
+  
+  .orderDetails {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-
-
-.product-image {
+  }
+  
+  .productImage {
     width: 120px;
     height: 120px;
     margin-right: 10px;
-}
-
-
-.product-info {
+  }
+  
+  .productInfo {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     font-size: 22px;
     font-weight: lighter;
-}
-
-
-.order-total {
+  }
+  
+  .orderTotal {
     margin-left: 80%;
     display: flex;
     align-items: center;
     font-size: 22px;
-}
-
-
-.order-total i {
+  }
+  
+  .orderTotal i {
     margin-right: 5px;
-}
-
-
-.order-actions {
+  }
+  
+  .orderActions {
     display: flex;
     justify-content: space-between;
-}
-
-
-.review-button, .contact-button {
-    height:70px;
-    padding: 10px 30px  ;
+  }
+  
+  .reviewButton,
+  .contactButton {
+    height: 70px;
+    padding: 10px 30px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 20px;
     font-weight: bold;
-}
-
-
-.custom-line {
+  }
+  
+  .customLine {
     width: 100%;
     height: 1px;
     border: 1px solid rgba(248, 151, 5, 0.57);
     opacity: 0.5;
     transform: rotate(-0.08deg);
     margin: 20px auto;
-}
-
-
-.review-button {
+  }
+  
+  .reviewButton {
     margin-left: 65%;
     background: #05CCF8;
-    padding: 10px 50px  ;
+    padding: 10px 50px;
     color: black;
     border-radius: 15px;
-}
-
-
-.review-button:hover {
+  }
+  
+  .reviewButton:hover {
     background-color: #45a049;
-}
-
-
-.contact-button {
+  }
+  
+  .contactButton {
     background: #05CCF8;
     color: black;
     border-radius: 15px;
     border: 1px solid rgba(252, 182, 3, 1);
-}
-
-
-.contact-button:hover {
-    background-color:transparent;
-}
-.pagination {
+  }
+  
+  .contactButton:hover {
+    background-color: transparent;
+  }
+  
+  .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-
-.pagination button {
+  }
+  
+  .pagination button {
     padding: 10px 15px;
     margin: 0 5px;
     border: 1px solid #ccc;
@@ -262,69 +217,59 @@ body {
     color: #333;
     border-radius: 5px;
     cursor: pointer;
-}
-
-
-.pagination button:hover {
+  }
+  
+  .pagination button:hover {
     background-color: #ddd;
-}
-
-
-.pagination .active {
+  }
+  
+  .pagination .active {
     background-color: #8948c2;
     color: #fff;
-}
-.left-sidebar {
+  }
+  
+  .leftSidebar {
     height: 10px;
     width: 250px;
     margin-right: 20px;
-}
-
-
-.user-row {
+  }
+  
+  .userRow {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-}
-
-
-.eclip {
+  }
+  
+  .eclip {
     width: 92px;
     height: 92px;
     border: 1px solid rgba(248, 151, 5, 0.57);
     background-color: rgba(255, 255, 255, 1);
     border-radius: 50%;
     margin-right: 10px;
-}
-
-
-.user-details {
+  }
+  
+  .userDetails {
     display: flex;
     flex-direction: column;
-}
-
-
-.username {
+  }
+  
+  .username {
     font-size: 20px;
-}
-
-
-.user-id {
+  }
+  
+  .userId {
     font-weight: bold;
-
-
-}
-
-
-.menu-item {
+  }
+  
+  .menuItem {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     font-size: 20px;
-}
-
-
-.menu-item i {
+  }
+  
+  .menuItem i {
     margin-right: 10px;
-}
-
+  }
+  

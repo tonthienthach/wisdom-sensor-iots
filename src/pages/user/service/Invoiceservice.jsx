@@ -1,100 +1,83 @@
-import './Invoiceservice.css';
+import React from 'react';
+import styles from './Invoiceservice.module.css';
 import image from './Cash.jpg';
 
 function InvoiceServicePage() {
     return (
-  <>
-  <div className="container">
-  <div className="contract-details">
-    <h1 className="header-title">Invoice detail</h1>
-    <div className="detail-row">
-      <span className="detail-label">Full name:</span>
-      <span className="detail-value">Nguyễn Cao Danh</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Phone:</span>
-      <span className="detail-value">0909123456</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Email:</span>
-      <span className="detail-value">danhcao@gmail.com</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Address:</span>
-      <span className="detail-value">95 TGS Qsa Bình Dương</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">
-        <b>Device info</b>
-      </span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Name service package:</span>
-      <span className="detail-value">Fire alarm sensor package</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Quantity:</span>
-      <span className="detail-value">1</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Start date:</span>
-      <span className="detail-value">02/03/2024</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">End date:</span>
-      <span className="detail-value">02/09/2024</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">
-        <b>Payment details</b>
-      </span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Total service package fee:</span>
-      <span className="detail-value">$250</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Total equipment cost:</span>
-      <span className="detail-value">$250</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Shipping fee:</span>
-      <span className="detail-value">$10</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">Service discound:</span>
-      <span className="detail-value">$0</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">
-        <b>Total payment:</b>
-      </span>
-      <span className="detail-value">$260</span>
-    </div>
-    <div className="detail-row">
-      <span className="detail-label">
-        <b>Payment method:</b>
-      </span>
-      <span className="detail-value">
-      <div>
-                    <img
-                        className="cash__image"
-                        loading="lazy"
-                        src= {image}
-                        alt="BootstrapBrain Logo"
-                    />
+        <div className={styles.container}>
+            <div className={styles.contractDetails}>
+                <h1 className={styles.headerTitle}>Invoice detail</h1>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Full name:</span>
+                    <span className={styles.detailValue}>Nguyễn Cao Danh</span>
                 </div>
-      </span>
-    </div>
-    <div className="header">
-      <button id="print-button" className="header-button">
-        Download
-      </button>
-    </div>
-  </div>
-</div>
-  </>
-
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Phone:</span>
+                    <span className={styles.detailValue}>0909123456</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Email:</span>
+                    <span className={styles.detailValue}>danhcao@gmail.com</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Address:</span>
+                    <span className={styles.detailValue}>95 TGS Qsa Bình Dương</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}><b>Device info</b></span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Name service package:</span>
+                    <span className={styles.detailValue}>Fire alarm sensor package</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Quantity:</span>
+                    <span className={styles.detailValue}>1</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Start date:</span>
+                    <span className={styles.detailValue}>02/03/2024</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>End date:</span>
+                    <span className={styles.detailValue}>02/09/2024</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}><b>Payment details</b></span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Total service package fee:</span>
+                    <span className={styles.detailValue}>$250</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Total equipment cost:</span>
+                    <span className={styles.detailValue}>$250</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Shipping fee:</span>
+                    <span className={styles.detailValue}>$10</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}>Service discount:</span>
+                    <span className={styles.detailValue}>$0</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}><b>Total payment:</b></span>
+                    <span className={styles.detailValue}>$260</span>
+                </div>
+                <div className={styles.detailRow}>
+                    <span className={styles.detailLabel}><b>Payment method:</b></span>
+                    <span className={styles.detailValue}>
+                        <div>
+                            <img className={styles.cashImage} loading="lazy" src={image} alt="Cash" />
+                        </div>
+                    </span>
+                </div>
+                <div className={styles.header}>
+                    <button id="print-button" className={styles.headerButton}>Download</button>
+                </div>
+            </div>
+        </div>
     );
 }
 
