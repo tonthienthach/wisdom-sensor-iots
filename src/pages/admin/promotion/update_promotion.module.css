@@ -124,7 +124,7 @@
   background-color: #fff;
 }
 
-button {
+/* button {
   width: 90%;
   padding: 15px;
   height: 40px;
@@ -132,12 +132,12 @@ button {
   color: white;
   border: none;
   border-radius: 15px;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   font-size: 24px;
-  margin: 0 auto; /* Center the button itself within its container */
+  margin: 0 auto; 
 }
 button:hover {
   background-color: #27ae60;
-}
+} */

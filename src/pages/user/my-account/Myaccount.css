@@ -1,5 +1,4 @@
-/* MyAccount.module.css */
-.mainContainer {
+.my-account__main-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -12,7 +11,7 @@
   margin-left: 50px;
 }
 
-.profileContainer {
+.my-account__profile-container {
   width: 65%;
   padding: 20px;
   border-radius: 3px;
@@ -22,60 +21,60 @@
   justify-content: space-between;
 }
 
-.profileHeading {
+.my-account__profile-heading {
   margin-top: 20px;
   margin-left: 20px;
   width: 100%;
 }
 
-.profileTitle {
+.my-account__profile-title {
   font-size: 20px;
   font-weight: 400;
 }
 
-.profileDescription {
+.my-account__profile-description {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 400;
 }
 
-.divider {
+.my-account__divider {
   width: 100%;
   height: 0;
   border: 1px solid black;
   margin-top: 20px;
 }
 
-.profileDetails {
+.my-account__profile-details {
   margin-top: 20px;
   margin-left: 20px;
   width: 60%;
 }
 
-.detailRow {
+.my-account__detail-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 50px;
 }
 
-.detailLabel {
+.my-account__detail-label {
   font-size: 20px;
   width: 100px;
   font-weight: 400;
 }
 
-.detailValue {
+.my-account__detail-value {
   margin-left: 10px;
   font-size: 20px;
   font-weight: 400;
   display: inline-block;
 }
-.detailValue input[type="text"] {
+.my-account__detail-value input[type="text"] {
   font-size: 20px;
 }
 
-.editButton {
+.my-account__edit-button {
   background: none;
   border: none;
   color: blue;
@@ -85,12 +84,12 @@
   text-decoration: underline;
 }
 
-.genderButtons {
+.my-account__gender-buttons {
   display: flex;
   gap: 10px;
 }
 
-.genderLabel {
+.my-account__gender-label {
   display: inline-block;
   cursor: pointer;
   border: 2px solid transparent;
@@ -99,21 +98,17 @@
   font-size: 20px;
 }
 
-.genderInput:checked + .genderLabel {
+.my-account__gender-input:checked + .my-account__gender-label {
   background-color: rgba(0, 0, 0, 0.1);
   border-color: blue;
 }
 
-.genderLabel:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.birthdayInputs {
+.my-account__birthday-inputs {
   display: flex;
   gap: 10px;
 }
 
-.birthdayInput {
+.my-account__birthday-input {
   height: 58px;
   border-radius: 10px;
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -121,18 +116,18 @@
   font-size: 20px;
 }
 
-.actionButtons {
+.my-account__action-buttons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.buttonContainer {
+.my-account__button-container {
   display: flex;
   gap: 50px;
 }
 
-.saveButton {
+.my-account__save-button {
   width: 110px;
   height: 58px;
   border-radius: 10px;
@@ -143,7 +138,7 @@
   background: rgba(127, 209, 235, 1);
 }
 
-.profileImage {
+.my-account__profile-image {
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -155,11 +150,11 @@
   margin-top: 20px;
 }
 
-.fileInput {
+.my-account__file-input {
   display: none;
 }
 
-.fileInputLabel {
+.my-account__file-input-label {
   display: inline-block;
   cursor: pointer;
   background-color: #f0f0f0;
@@ -169,7 +164,7 @@
   text-align: center;
 }
 
-.fileInfo {
+.my-account__file-info {
   margin-top: 10px;
   text-align: center;
   font-size: 20px;
@@ -178,51 +173,51 @@
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .mainContainer {
+  .my-account__main-container {
     flex-direction: column;
   }
   #menu-placeholder,
-  .profileContainer {
+  .my-account__profile-container {
     width: 100%;
   }
-  .profileDetails {
+  .my-account__profile-details {
     width: 100%;
   }
-  .profileImage {
+  .my-account__profile-image {
     width: 100%;
     margin-top: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .detailRow {
+  .my-account__detail-row {
     font-size: 20px;
     flex-direction: column;
     align-items: flex-start;
   }
-  .detailLabel {
+  .my-account__detail-label {
     width: 100%;
   }
-  .detailValue,
-  .editButton {
+  .my-account__detail-value,
+  .my-account__edit-button {
     font-size: 20px;
     width: 100%;
     margin-left: 0;
   }
-  .genderValue {
+  .my-account__gender-value {
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
-  .birthdayInputs {
+  .my-account__birthday-inputs {
     flex-direction: column;
     width: 100%;
   }
-  .birthdayInput {
+  .my-account__birthday-input {
     width: 100%;
     margin-bottom: 10px;
   }
-  .actionButtons {
+  .my-account__action-buttons {
     justify-content: center;
   }
 }
