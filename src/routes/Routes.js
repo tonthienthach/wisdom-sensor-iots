@@ -3,7 +3,6 @@ import LayoutMain from "../layout/layout-main/LayoutMain";
 import Home from "../pages/home/Home";
 
 import RegisterPage from "../pages/user/register/Register";
-import LoginPage from '../pages/login/login';
 import ChangePasswordPage from "../pages/user/changePassword/ChangePasswordPage";
 
 import ChangePasswordAdmin from "../pages/admin/changepassword/changepassword";
@@ -19,7 +18,6 @@ import Editemployee from "../pages/admin/employee/edit_employee";
 
 const mainRoutes = [
   { path: configRoutes.home, component: Home, layout: LayoutMain },
-  {path: configRoutes.loginUser, component: LoginPage, layout: LayoutMain},
   {path: configRoutes.registerUser, component: RegisterPage, layout: LayoutMain}, 
   {path: configRoutes.changePassword, component: ChangePasswordPage, layout: LayoutMain},
   {path: configRoutes.ChangePasswordAdmin, component: ChangePasswordAdmin,layout:LayoutMain},
