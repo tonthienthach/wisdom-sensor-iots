@@ -2,7 +2,6 @@
 .mainContainer {
   margin-bottom: 100px;
   display: flex;
-  background-color: #f7f7f7; /* Thay thế cho background-color của body */
   min-height: 100vh; /* Thay thế cho min-height của body */
   font-family: Arial, sans-serif; /* Thay thế cho font-family của body */
 }
@@ -79,6 +78,4 @@
   border-radius: 5px;
 }
 
-.useBtn:hover {
-  background-color: #0056b3;
-}
+

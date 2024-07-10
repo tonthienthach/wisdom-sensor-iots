@@ -66,12 +66,12 @@ const AddPromotion = () => {
     <div>
       <div id="header-placeholder"></div>
 
-      <div className={styles.content}>
-        <div className={styles.addPromotion}>
-          <h1 className={styles.headerTitle}>ADD PROMOTION</h1>
+      <div className={styles['content']}>
+        <div className={styles['add-promotion']}>
+          <h1 className={styles['add-promotion__header-title']}>ADD PROMOTION</h1>
           <form onSubmit={handleSubmit}>
-            <div className={styles.formGroup}>
-              <label htmlFor="name">Name:</label>
+            <div className={styles['add-promotion__form-group']}>
+              <label htmlFor="name" className={styles['add-promotion__label']}>Name:</label>
               <input
                 type="text"
                 id="name"
@@ -80,11 +80,12 @@ const AddPromotion = () => {
                 onChange={handleChange}
                 placeholder="Promotion name"
                 required
+                className={styles['add-promotion__input']}
               />
             </div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="describe">Describe:</label>
+            <div className={styles['add-promotion__form-group']}>
+              <label htmlFor="describe" className={styles['add-promotion__label']}>Describe:</label>
               <input
                 type="text"
                 id="describe"
@@ -93,11 +94,12 @@ const AddPromotion = () => {
                 onChange={handleChange}
                 placeholder="Describe"
                 required
+                className={styles['add-promotion__input']}
               />
             </div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="code">Code:</label>
+            <div className={styles['add-promotion__form-group']}>
+              <label htmlFor="code" className={styles['add-promotion__label']}>Code:</label>
               <input
                 type="text"
                 id="code"
@@ -106,12 +108,13 @@ const AddPromotion = () => {
                 onChange={handleChange}
                 placeholder="24SALE50P"
                 required
+                className={styles['add-promotion__input']}
               />
             </div>
 
-            <div className={styles.formGroup}>
-              <label>Start Date:</label>
-              <div className={styles.dateGroup}>
+            <div className={styles['add-promotion__form-group']}>
+              <label className={styles['add-promotion__label']}>Start Date:</label>
+              <div className={styles['add-promotion__date-group']}>
                 <input
                   type="text"
                   id="startDay"
@@ -120,6 +123,7 @@ const AddPromotion = () => {
                   onChange={handleChange}
                   placeholder="Day"
                   required
+                  className={styles['add-promotion__input']}
                 />
                 <input
                   type="text"
@@ -129,6 +133,7 @@ const AddPromotion = () => {
                   onChange={handleChange}
                   placeholder="Month"
                   required
+                  className={styles['add-promotion__input']}
                 />
                 <input
                   type="text"
@@ -138,13 +143,14 @@ const AddPromotion = () => {
                   onChange={handleChange}
                   placeholder="Year"
                   required
+                  className={styles['add-promotion__input']}
                 />
               </div>
             </div>
 
-            <div className={styles.formGroup}>
-              <label>End Date:</label>
-              <div className={styles.dateGroup}>
+            <div className={styles['add-promotion__form-group']}>
+              <label className={styles['add-promotion__label']}>End Date:</label>
+              <div className={styles['add-promotion__date-group']}>
                 <input
                   type="text"
                   id="endDay"
@@ -153,6 +159,7 @@ const AddPromotion = () => {
                   onChange={handleChange}
                   placeholder="Day"
                   required
+                  className={styles['add-promotion__input']}
                 />
                 <input
                   type="text"
@@ -162,6 +169,7 @@ const AddPromotion = () => {
                   onChange={handleChange}
                   placeholder="Month"
                   required
+                  className={styles['add-promotion__input']}
                 />
                 <input
                   type="text"
@@ -171,12 +179,13 @@ const AddPromotion = () => {
                   onChange={handleChange}
                   placeholder="Year"
                   required
+                  className={styles['add-promotion__input']}
                 />
               </div>
             </div>
 
-            <div className={`${styles.formGroup} ${styles.limitGroup}`}>
-              <label>Limit:</label>
+            <div className={`${styles['add-promotion__form-group']} ${styles['add-promotion__limit-group']}`}>
+              <label className={styles['add-promotion__label']}>Limit:</label>
               <div>
                 <input
                   type="radio"
@@ -185,8 +194,9 @@ const AddPromotion = () => {
                   value="limit"
                   checked={formData.limit === 'limit'}
                   onChange={handleChange}
+                  className={styles['add-promotion__radio']}
                 />
-                <label htmlFor="limit">Limit</label>
+                <label htmlFor="limit" className={styles['add-promotion__radio-label']}>Limit</label>
               </div>
               <div>
                 <input
@@ -196,13 +206,14 @@ const AddPromotion = () => {
                   value="no-limit"
                   checked={formData.limit === 'no-limit'}
                   onChange={handleChange}
+                  className={styles['add-promotion__radio']}
                 />
-                <label htmlFor="no-limit">No Limit</label>
+                <label htmlFor="no-limit" className={styles['add-promotion__radio-label']}>No Limit</label>
               </div>
             </div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="amount">Amount:</label>
+            <div className={styles['add-promotion__form-group']}>
+              <label htmlFor="amount" className={styles['add-promotion__label']}>Amount:</label>
               <input
                 type="number"
                 id="amount"
@@ -213,10 +224,11 @@ const AddPromotion = () => {
                 min="1"
                 max="100"
                 required
+                className={styles['add-promotion__input']}
               />
             </div>
 
-            <button type="submit" className={styles.button}>ADD</button>
+            <button type="submit" className={styles['add-promotion__button']}>ADD</button>
           </form>
         </div>
       </div>

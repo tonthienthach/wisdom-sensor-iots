@@ -7,47 +7,7 @@ import image3 from './Search.jpg';
 function MyPurchaseProcessingPage() {
   return (
     <div className={styles.container}>
-      <div className={styles.leftSidebar}>
-        <div className={styles.userRow}>
-          <div className={styles.eclip} />
-          <div className={styles.userDetails}>
-            <span className={styles.username}>Username</span>
-            <span className={styles.userId}>Edit profile</span>
-          </div>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="far fa-user" />
-          <span>My Account</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className={`fas fa-shopping-cart ${styles.ordersIcon}`} />
-          <span style={{ color: "red" }}>My Purchase</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-bell" />
-          <span>Notifications</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-ticket" />
-          <span>My Promotion</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className={`fas fa-file-contract ${styles.contractIcon}`} />
-          <span>My Subscribe Service Plan</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-id-card" />
-          <span>My Contract</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-exclamation-triangle" />
-          <span>Help center</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-sign-out" />
-          <span>Log out</span>
-        </div>
-      </div>
+    
       <div className={styles.mainContent}>
         <div className={styles.filterBar}>
           <button className={styles.filterButton}>ALL</button>

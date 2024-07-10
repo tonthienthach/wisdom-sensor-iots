@@ -1,71 +1,39 @@
 import React from 'react'
 import styles from './MypurchaseDetail.module.css'
 
+// Import images
+import backImage from '../../../assets/Back.png';
+import purchaseOrderImage from '../../../assets/Purchase Order.png';
+import deliveryImage from '../../../assets/Delivery.png';
+import receiveDollarImage from '../../../assets/Receive Dollar.png';
+import settingsImage from '../../../assets/Settings.png';
+import starImage from '../../../assets/Star.png';
+import ellipseImage from '../../../assets/Ellipse 16.png';
+import doneImage from '../../../assets/Done.png';
+import iotImage from '../../../assets/IoT.png';
+import UserMenu from '../menu/UserMenu';
+
 const MyPurchaseDetail = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.leftSidebar}>
-        <div className={styles.userRow}>
-          <div className={styles.eclip} />
-          <div className={styles.userDetails}>
-            <span className={styles.username}>Username</span>
-            <span className={styles.userId}>ID: 12345</span>
-          </div>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="far fa-user" />
-          <span>My Profile</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className={`fas fa-shopping-cart ${styles.ordersIcon}`} />
-          <span style={{ color: "red" }}>My Purchase</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-bell" />
-          <span>Notifications</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-ticket" />
-          <span>My Promotion</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className={`fas fa-file-contract ${styles.contractIcon}`} />
-          <span>My Subscribe Service Plan</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-id-card" />
-          <span>My Contract</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-exclamation-triangle" />
-          <span>Help center</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-sign-out" />
-          <span>Log out</span>
-        </div>
-      </div>
+      <UserMenu />
       <div className={styles.mainContent}>
         <div className={styles.orderList}>
           <div className={styles.orderItem}>
             <div className={styles.orderHeader}>
-              <img src="../../../images/Back.png" alt="Back" />
+              <img src={backImage} alt="Back" />
             </div>
             <hr className={styles.customLine} />
             <div className={styles.orderDetails}>
-              <img src="../../../images/Purchase Order.png" alt="Purchase" />
+              <img src={purchaseOrderImage} alt="Purchase" />
               <hr className={styles.orderLine} />
-              <img
-                src="../../../images/Delivery.png"
-                alt="Delivery"
-                className={styles.deliveryIcon}
-              />
+              <img src={deliveryImage} alt="Delivery" className={styles.deliveryIcon} />
               <hr className={styles.orderLine} />
-              <img src="../../../images/Receive Dollar.png" alt="Receive" />
+              <img src={receiveDollarImage} alt="Receive" />
               <hr className={styles.orderLine} />
-              <img src="../../../images/Settings.png" alt="Settings" />
+              <img src={settingsImage} alt="Settings" />
               <hr className={styles.orderLine} />
-              <img src="../../../images/Star.png" alt="Star" />
+              <img src={starImage} alt="Star" />
             </div>
             <div className={styles.orderDetails}>
               <h3>Ordered</h3>
@@ -94,13 +62,13 @@ const MyPurchaseDetail = () => {
             <p>(+84) 909123456 95 TGS Qsa Binh Duong</p>
             <hr className={styles.customLine} />
             <div className={styles.orderDetails}>
-              <img src="../../../images/Ellipse 16.png" alt="Ellipse" />
+              <img src={ellipseImage} alt="Ellipse" />
               <hr className={styles.orderLine} />
-              <img src="../../../images/Ellipse 16.png" alt="Ellipse" />
+              <img src={ellipseImage} alt="Ellipse" />
               <hr className={styles.orderLine} />
-              <img src="../../../images/Ellipse 16.png" alt="Ellipse" />
+              <img src={ellipseImage} alt="Ellipse" />
               <hr className={styles.orderLine} />
-              <img src="../../../images/Done.png" alt="Done" />
+              <img src={doneImage} alt="Done" />
             </div>
             <div className={styles.orderDetails}>
               <p>20/02/2024 12:00</p>
@@ -124,7 +92,7 @@ const MyPurchaseDetail = () => {
           <div className={styles.orderItem}>
             <div className={styles.orderHeader}>
               <img
-                src="../../../images/Delivery.png"
+                src={deliveryImage}
                 alt="Delivery"
                 className={styles.deliveryIcon}
               />
@@ -136,7 +104,7 @@ const MyPurchaseDetail = () => {
             <hr className={styles.customLine} />
             <div className={styles.orderDetails}>
               <img
-                src="../../../images/IoT.png"
+                src={iotImage}
                 alt="Product"
                 className={styles.productImage}
               />
@@ -172,7 +140,6 @@ const MyPurchaseDetail = () => {
               </div>
             </div>
           </div>
-          {/* Repeat order-item for additional orders */}
         </div>
       </div>
     </div>

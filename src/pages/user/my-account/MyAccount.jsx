@@ -1,10 +1,11 @@
 import React from 'react';
 import './Myaccount.css';
+import UserMenu from '../menu/UserMenu'; // Đường dẫn tới UserMenu
 
 const MyAccount = () => {
   return (
     <div className="my-account__main-container">
-        <div id="menu-placeholder" /> {/* Chỗ này sẽ được thay thế bởi menu */}
+        <UserMenu /> {/* Sử dụng UserMenu ở đây */}
         <div className="my-account__profile-container">
             <div className="my-account__profile-heading">
                 <div className="my-account__profile-title">My Profile</div>

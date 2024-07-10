@@ -1,23 +1,30 @@
-import styles from './Servicelist.module.css'
-import image from './Carsensor.jpg'
-import image2 from './FireAlarm.jpg'
-import DataFetcher from '../../../components/DataFetcher'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from './Servicelist.module.css';
+import image from './Carsensor.jpg';
+import image2 from './FireAlarm.jpg';
 
 function ServiceListPage() {
+    const navigate = useNavigate();
+
     useEffect(() => {
         // Set custom body styles when the component mounts
-        document.body.style.backgroundColor = 'antiquewhite'
-        document.body.style.margin = '0'
-        document.body.style.padding = '0'
+        document.body.style.backgroundColor = 'antiquewhite';
+        document.body.style.margin = '0';
+        document.body.style.padding = '0';
 
         // Clean up function to reset the body style when the component unmounts
         return () => {
-            document.body.style.backgroundColor = ''
-            document.body.style.margin = ''
-            document.body.style.padding = ''
-        }
-    }, [])
+            document.body.style.backgroundColor = '';
+            document.body.style.margin = '';
+            document.body.style.padding = '';
+        };
+    }, []);
+
+    const handleViewMoreClick = (serviceId) => {
+        navigate(`/user/service-detail/${serviceId}`);
+    };
+
     return (
         <div className={styles['service-list']}>
             <div className={styles['service-list__header']}>
@@ -32,7 +39,7 @@ function ServiceListPage() {
                             className={styles['service-list__item img']}
                             loading='lazy'
                             src={image}
-                            alt='BootstrapBrain Logo'
+                            alt='Car sensor package'
                         />
                     </div>
                     <div className={styles['service-list__details']}>
@@ -41,19 +48,19 @@ function ServiceListPage() {
                             Automotive sensors are devices used to sense and collect information
                             about the vehicle's surroundings to support autopilot and improve
                             driving safety.{' '}
-                            <a
-                                href='../../../html/service/servicelistdetail/servicedetail.html'
+                            <span
                                 className={styles['service-list__more']}
+                                onClick={() => handleViewMoreClick('car-sensor')}
                             >
                                 View more
-                            </a>
+                            </span>
                         </p>
                         <p className={styles['service-list__price']}>
                             $300 / 6 months{' '}
                             <a
                                 href='#'
                                 className={styles['service-list__buy-now']}
-                                data-service-id='car-sensor'
+                                onClick={() => handleViewMoreClick('car-sensor')}
                             >
                                 BUY NOW
                             </a>
@@ -68,7 +75,7 @@ function ServiceListPage() {
                             className={styles['service-list__item img']}
                             loading='lazy'
                             src={image2}
-                            alt='BootstrapBrain Logo'
+                            alt='Fire alarm sensor package'
                         />
                     </div>
                     <div className={styles['service-list__details']}>
@@ -77,12 +84,12 @@ function ServiceListPage() {
                             Fire alarm sensor services are solutions that provide sensor devices and
                             related systems to detect and warn about the presence of fire or smoke
                             hazards in a certain environment.{' '}
-                            <a
-                                href='../../../html/service/servicelistdetail/servicedetail.html'
+                            <span
                                 className={styles['service-list__more']}
+                                onClick={() => handleViewMoreClick('fire-alarm-sensor')}
                             >
                                 View more
-                            </a>
+                            </span>
                         </p>
                         <p className={styles['service-list__price']}>
                             $300 / 6 months{' '}
@@ -116,7 +123,7 @@ function ServiceListPage() {
             </div>
             {/* <DataFetcher /> */}
         </div>
-    )
+    );
 }
 
-export default ServiceListPage
+export default ServiceListPage;

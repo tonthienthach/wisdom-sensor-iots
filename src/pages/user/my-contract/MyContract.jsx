@@ -1,10 +1,24 @@
-import React from 'react'
-import styles from './Mycontract.module.css'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from './Mycontract.module.css';
+
+// Import images
+import carSensorImage from '../../../assets/car-sensor.png';
+import fireAlarmImage from '../../../assets/Fire Alarm.png';
+import UserMenu from '../menu/UserMenu';
 
 const MyContract = () => {
+  const navigate = useNavigate();
+
+  const navigateToDetail = () => {
+    navigate('/user/my-contract-detail'); // Điều hướng đến trang chi tiết
+  };
+
   return (
     <div className={styles.mainContainer}>
-      <div id={styles.menuContainer} />
+      <div className={styles.menuContainer}>
+        <UserMenu />
+      </div>
       <div className={styles.container}>
         <input
           type="text"
@@ -13,30 +27,25 @@ const MyContract = () => {
         />
         <div className={styles.card}>
           <div className={styles.icon}>
-            <img src="../../../images/car-sensor.png" alt="Car sensor package" />
+            <img src={carSensorImage} alt="Car sensor package" />
           </div>
           <div className={styles.details}>
             <p>Car sensor package</p>
-            <button onClick={() => navigateToDetail()}>Review the contact</button>
+            <button onClick={navigateToDetail}>Review the contract</button>
           </div>
         </div>
         <div className={styles.card}>
           <div className={styles.icon}>
-            <img src="../../../images/Fire Alarm.png" alt="IoT sensor package" />
+            <img src={fireAlarmImage} alt="IoT sensor package" />
           </div>
           <div className={styles.details}>
             <p>IoT sensor package</p>
-            <button onClick={() => navigateToDetail()}>Review the contact</button>
+            <button onClick={navigateToDetail}>Review the contract</button>
           </div>
         </div>
       </div>
     </div>
-  )
-}
-
-export default MyContract
-
-const navigateToDetail = () => {
-  // Điều hướng đến trang chi tiết
-  console.log("Navigating to detail page...");
+  );
 };
+
+export default MyContract;

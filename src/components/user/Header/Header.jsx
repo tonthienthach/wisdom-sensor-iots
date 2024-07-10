@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './header.module.css';
 import logo from '../../../assets/logo.png'; // Import logo image
 
@@ -8,18 +10,15 @@ function Header() {
                 <div className={styles.headerContainer}>
                     <img src={logo} alt='Logo' className={styles.logo1} />
                     <nav className={styles.navMenu}>
-                        <a href='../../../html/user/my_account/profile.html' className={styles.navLink}>
+                        <Link to='/user/my-account' className={styles.navLink}>
                             Home
-                        </a>
-                        <a href='../../../html/user/service/servicelist.html' className={styles.navLink}>
+                        </Link>
+                        <Link to='/user/service-list' className={styles.navLink}>
                             Service Pack
-                        </a>
-                        <a
-                            href='../../../static/html/admin/contract/contract_list.html'
-                            className={styles.navLink}
-                        >
+                        </Link>
+                        <Link to='/admin/contract-list' className={styles.navLink}>
                             Contact
-                        </a>
+                        </Link>
                     </nav>
                     <div className={styles.icons}>
                         <span className={styles.icon}>

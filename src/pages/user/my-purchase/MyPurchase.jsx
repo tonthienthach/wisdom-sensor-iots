@@ -1,50 +1,14 @@
-import React from 'react'
-import styles from './Mypurchase.module.css'
+import React from 'react';
+import styles from './Mypurchase.module.css';
+import SearchIcon from '../../../assets/Rectangle 343.png';
+import DeliveryIcon from '../../../assets/Delivery.png';
+import FireAlarmIcon from '../../../assets/Fire Alarm.png';
+import UserMenu from '../menu/UserMenu'; // Đường dẫn chính xác tới UserMenu
 
 const MyPurchase = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.leftSidebar}>
-        <div className={styles.userRow}>
-          <div className={styles.eclip} />
-          <div className={styles.userDetails}>
-            <span className={styles.username}>Username</span>
-            <span className={styles.userId}>ID: 12345</span>
-          </div>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="far fa-user" />
-          <span>My Profile</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className={`fas fa-shopping-cart ${styles.ordersIcon}`} />
-          <span style={{ color: "red" }}>My Purchase</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-bell" />
-          <span>Notifications</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-ticket" />
-          <span>My Promotion</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className={`fas fa-file-contract ${styles.contractIcon}`} />
-          <span>My Subcribe Service Plan</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-id-card" />
-          <span>My Contract</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-exclamation-triangle" />
-          <span>Help center</span>
-        </div>
-        <div className={styles.menuItem}>
-          <i className="fa fa-sign-out" />
-          <span>Log out</span>
-        </div>
-      </div>
+      <UserMenu /> {/* Hiển thị menu người dùng bên trái */}
       <div className={styles.mainContent}>
         <div className={styles.filterBar}>
           <button className={styles.filterButton}>ALL</button>
@@ -54,7 +18,7 @@ const MyPurchase = () => {
         </div>
         <div className={styles.searchBar}>
           <button className={styles.searchIconButton}>
-            <img src="../../../images/Rectangle 343.png" alt="Search Icon" />
+            <img src={SearchIcon} alt="Search Icon" />
           </button>
           <input
             type="text"
@@ -66,7 +30,7 @@ const MyPurchase = () => {
           <div className={styles.orderItem}>
             <div className={styles.orderHeader}>
               <img
-                src="../../../images/Delivery.png"
+                src={DeliveryIcon}
                 alt="Delivery"
                 className={styles.deliveryIcon}
               />
@@ -76,7 +40,7 @@ const MyPurchase = () => {
             <hr className={styles.customLine} />
             <div className={styles.orderDetails}>
               <img
-                src="../../../images/Fire Alarm.png"
+                src={FireAlarmIcon}
                 alt="Product"
                 className={styles.productImage}
               />
@@ -108,7 +72,7 @@ const MyPurchase = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default MyPurchase
+export default MyPurchase;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Invoiceservice.module.css';
-import image from './Cash.jpg';
+import image from '../../../assets/cash.png';
 
 function InvoiceServicePage() {
     return (

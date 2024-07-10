@@ -1,4 +1,4 @@
-.container {
+.register__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 
-.background {
+.register__background {
     position: fixed;
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@
     z-index: -1;
 }
 
-.Register {
+.register__form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,61 +28,82 @@
     border-radius: 8px;
     width: 90%;
     max-width: 400px;
-    
 }
 
-.Register-text {
+.register__text {
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     color: #000000;
 }
 
-input, select, button {
+.register__first-container {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    padding: 10px;
+}
+
+.register__lastname, .register__firstname, .register__email, .register__phone, .register__birth, .register__username, .register__password {
+    width: 100%;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.register__lastname input, .register__firstname input, .register__email input, .register__phone input, .register__birth input, .register__username input, .register__password input {
+    flex: 1;
+    padding: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
 
-input[type="radio"] {
-    margin-right: 5px;
+.register__sex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .form-check {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
 
-.Register button {
+.form-check__input {
+    margin-right: 5px;
+}
+
+.register__button {
+    width: 100%;
+    padding: 10px;
     background-color: #007bff;
     color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-.Register button:hover {
+.register__button:hover {
     background-color: #0056b3;
 }
 
-.Register-login {
+.register__login {
     text-align: center;
     margin-top: 20px;
     opacity: 0.7;
 }
 
-.Register-login h1, .Register-login h2 {
+.register__login h1, .register__login h2 {
     font-size: 18px;
     color: #333;
 }
 
-.Register-login h2 {
+.register__login h2 {
     color: #d9534f;
     cursor: pointer;
 }
 
-.Register-login h2:hover {
+.register__login h2:hover {
     text-decoration: underline;
 }
