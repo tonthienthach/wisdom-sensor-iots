@@ -7,6 +7,8 @@ import VerifyEmail from '../pages/user/verifyEmail/verifyEmail'
 import NotFound from './../pages/pageNotFound/notFound'
 import Login from '../pages/user/login/Login'
 
+import LayoutMainSetting from '../layout/layout_main_setting/layoutMainSetting'
+
 import LayoutMainAdmin from '../layout/layout_main_admin/layout_main_admin'
 import LoginPage from './../pages/user/login/Login'
 import ChangePasswordPage from '../pages/user/changePassword/ChangePasswordPage'
@@ -41,8 +43,20 @@ import ServiceAddAdmin from '../pages/admin/service-pack/add_service'
 import ServiceListAdmin from '../pages/admin/service-pack/list_service'
 import DetailServiceAdmin from '../pages/admin/service-pack/detail_service'
 import UpdateServiceAdmin from '../pages/admin/service-pack/update_service'
+//setting
+import ChangeYourPasswordSetting from '../pages/setting/change_yourpassword'
+import LoginSetting from '../pages/setting/login'
+import ForgotPasswordSetting from '../pages/setting/forgot_password'
+import VerifyEmailSetting from '../pages/setting/verity_email'
+import OrderListSetting from '../pages/setting/order_list'
+import OrderListDetailSetting from '../pages/setting/order_list_review'
+//admin
+import LoginAdmin from '../pages/admin/login/login_admin'
+
+ 
 
 const mainRoutes = [
+    //user
     { path: configRoutes.home, component: Home, layout: LayoutMain },
     { path: configRoutes.loginUser, component: LoginPage, layout: LayoutMain },
     {
@@ -60,7 +74,6 @@ const mainRoutes = [
         component: ForgotPassword,
         layout: LayoutMain,
     },
-    //dat
     {
         path: configRoutes.serviceList,
         component: ServiceListPage,
@@ -96,6 +109,45 @@ const mainRoutes = [
         component: MyPurchaseReviewPage,
         layout: LayoutMain,
     },
+//setting
+    {
+        path: configRoutes.changeYourPasswordSetting,
+        component: ChangeYourPasswordSetting,
+        layout: LayoutMainSetting,
+    },
+    {
+        path: configRoutes.loginSetting,
+        component: LoginSetting,
+        layout: LayoutMainSetting,
+    },
+    {
+        path: '/setting/forgot-password',
+        component: ForgotPasswordSetting,
+        layout: LayoutMainSetting,
+    },
+    {
+        path: '/setting/verity-email',
+        component: VerifyEmailSetting,
+        layout: LayoutMainSetting,
+    },
+    {
+        path: configRoutes.orderListSetting,
+        component: OrderListSetting,
+        layout: LayoutMain,
+    },
+    {
+        path: configRoutes.orderListDetailSetting,
+        component: OrderListDetailSetting,
+        layout: LayoutMain,
+    },
+    //admin
+    {
+        path: '/admin/login',
+        component: LoginAdmin,
+        layout: LayoutMainAdmin,
+    },
+
+
     //minh nghia
     {
         path: configRoutes.customerDetail,
@@ -215,5 +267,7 @@ const mainRoutes = [
         component: Notification,
         layout: LayoutMain,
     },
+
+
 ]
 export default mainRoutes

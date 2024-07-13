@@ -1,0 +1,253 @@
+
+
+.container {
+    margin-top: 30px;
+    width: 1200px;
+    height: 1491px;
+    margin: 0 auto;
+    padding-left: 20px;
+    margin-left: 200px;
+    border: 3px solid #000; 
+}
+
+.container-main {
+    width: 100%;
+    flex-direction: row;
+}
+
+.row1 {
+    margin-left: 250px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 32px;
+}
+
+.row {
+    width: 1000px;
+    height: 200px;
+    margin-left: -180px;
+    display: flex;
+    align-items: center;
+}
+
+.order-detail { 
+    width: 1000px;
+    height: 100px;
+    background: rgba(59, 171, 195, 1);
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.small-image {
+    width: 48px;
+    height: 39px;
+    margin-left: 148px;
+    opacity: 0.5;
+}
+
+.back-button {
+    margin-left: 20px;
+}
+
+.medium-image {
+    width: 52px;
+    height: 60px;
+    margin-left: 200px;
+}
+
+.order-id {
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+.expected-date {
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.order-date {
+    margin-left: 15px;
+    font-size: 24px;
+    width: 452px;
+}
+
+.order-info {
+    margin-left: 148px;
+}
+
+.delivery-image {
+    width: 65px;
+    height: 73px;
+    margin-left: 195px;
+}
+
+.accept-button,
+.processing-button {
+    margin-right: 20px;
+    Width: 223px;
+    Height: 36px;
+    background: rgba(242, 15, 15, 1);
+    font-size: 20px;
+}
+
+.accept-button {
+    margin-left: 955px;
+    background: rgba(15, 242, 133, 1);
+}
+
+.products-container {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    width: 1199px;
+    height: 498px;
+    margin: 0px 0 0 0px;
+}
+
+.package-button {
+    width: 188px;
+    height: 52px;
+    border-radius: 15px;
+    background: rgba(15, 242, 133, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+}
+
+.product-table {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.product-table th,
+.product-table td {
+    text-align: left;
+    padding: 10px;
+}
+
+.payment-info {
+    margin: 20px 0 0 143px;
+    font-size: 32px;
+}
+
+.payment-info__title {
+    font-size: 36px;
+}
+
+.payment-info__status {
+    width: 290px;
+    height: 79px;
+    background: rgba(15, 242, 133, 1);
+    border-radius: 25px 0 0 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 79px;
+    color: white;
+    font-weight: bold;
+}
+
+.back-button {
+    font-size: 32px;
+}
+
+.review-image {
+    width: 200px;
+    height: 79px;
+}
+
+@media only screen and (max-width: 1000px) {
+   
+
+    header .title {
+        font-size: 18px;
+    }
+
+    header .user-info img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .container-main {
+        padding: 10px;
+    }
+
+    .row1,
+    .row,
+    .products-container,
+    .payment-info {
+        padding: 10px;
+    }
+
+    .products-container th,
+    .products-container td {
+        padding: 5px;
+    }
+
+    .review-image,
+    .medium-image,
+    .delivery-image {
+        width: 100%;
+    }
+
+    .payment-info p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .user-info {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    header .title {
+        font-size: 16px;
+    }
+
+    .container-main {
+        padding: 5px;
+    }
+
+    .row1,
+    .row,
+    .products-container,
+    .payment-info {
+        padding: 5px;
+    }
+
+    .products-container th,
+    .products-container td {
+        padding: 3px;
+    }
+
+    .review-image,
+    .medium-image,
+    .delivery-image {
+        width: 100%;
+    }
+
+    .payment-info p {
+        font-size: 10px;
+    }
+}
