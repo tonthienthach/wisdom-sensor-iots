@@ -52,6 +52,9 @@ import OrderListSetting from '../pages/setting/order_list'
 import OrderListDetailSetting from '../pages/setting/order_list_review'
 //admin
 import LoginAdmin from '../pages/admin/login/login_admin'
+import VerityEmailAdmin from '../pages/admin/verity_email_admin/verity_email_admin'
+import ChangePasswordAdmin from '../pages/admin/change_password/change_password'
+import AddEmployeeAdmin from '../pages/admin/employee/add_employee'
 
  
 
@@ -144,6 +147,21 @@ const mainRoutes = [
     {
         path: '/admin/login',
         component: LoginAdmin,
+        layout: LayoutMainAdmin,
+    },
+    {
+        path: '/admin/verity-email',
+        component: VerityEmailAdmin,
+        layout: LayoutMainAdmin,
+    },
+    {
+        path: '/admin/change-password',
+        component: ChangePasswordAdmin,
+        layout: LayoutMainAdmin,
+    },
+    {
+        path: configRoutes.addEmployeeAdmin,
+        component: AddEmployeeAdmin,
         layout: LayoutMainAdmin,
     },
 

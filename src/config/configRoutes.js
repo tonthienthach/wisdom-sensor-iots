@@ -29,6 +29,12 @@ const configRoutes = {
     verifyEmailSetting: '/setting/verity-email',
     orderListSetting: '/setting/order-list',
     orderListDetailSetting: '/setting/order-list-detail',
+    //admin
+    loginAdmin: '/admin/login',
+    verifyEmailAdmin: '/admin/verity-email',
+    changePasswordAdmin: '/admin/verity-email',
+    addEmployeeAdmin: '/admin/add-employee',
+
 
     // minh nghia
     customerDetail: '/customer/customer-detail',
